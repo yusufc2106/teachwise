@@ -17,6 +17,17 @@ html {
 font-family: 'Roboto Condensed', sans-serif;
 }
 
+
+a 
+{
+  color: black;
+}
+
+
+
+
+
+
 h1
 {
     font-size: 50px;
@@ -55,14 +66,13 @@ article
   /* Header and Navigation */
 nav
 {
-    color: white;
-    overflow: hidden;
+    /* overflow: hidden; */
     background-color: rgb(36, 5, 5);
 }
 
 nav p
 {
-    float:left;
+  display: inline-block;
     padding: 14px 16px;
     margin: 0;
 }
@@ -74,7 +84,6 @@ nav p
 nav a
 {
     display: inline-block;
-    color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -103,11 +112,6 @@ nav a
 {
 color: white;
 background-color:rgba(56, 4, 14, 1);
-}
-
-a
-{
-    color: white;
 }
 
 /* Form styling */
