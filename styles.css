@@ -1,171 +1,272 @@
 html {
-    box-sizing: border-box;
-    
-  }
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
-
-  /* Global Styles */
-  body
-  {
-    font-family: 'Raleway', sans-serif;
-    margin: 0;
-  }
-#home h1, #about h2, #contact h2
-{
-font-family: 'Roboto Condensed', sans-serif;
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
-
-a 
-{
-  color: black;
+/* Global Styles */
+body {
+  font-family: "Raleway", sans-serif;
+  margin: 0;
 }
 
-
-
-
-
-
-h1
-{
-    font-size: 50px;
-    text-decoration: underline;
+#home h1,
+#about h2,
+#contact h2 {
+  font-family: "Roboto Condensed", sans-serif;
 }
 
-h2
-{
-    text-align: center;
-    font-size: 35px;
-    margin-top: 0;
+#home h1 {
+  text-decoration: underline;
 }
 
-h3
-{
-    font-size: 25px;
+h1 {
+  font-size: 50px;
 }
 
-p
-{
-    font-size: 20px;
+h2 {
+  text-align: center;
+  font-size: 35px;
+  margin-top: 0;
 }
 
-article
-{
-    margin: 60px 0;
+h3 {
+  font-size: 25px;
 }
 
-.content-wrap
-{
-    max-width: 950px;
-    margin: 0 auto;
-    padding: 50px;
+p {
+  font-size: 20px;
 }
 
-  /* Header and Navigation */
+article {
+  margin: 60px 0;
+}
+
+.content-wrap {
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+/* Header and Navigation */
 nav
 {
-    /* overflow: hidden; */
-    background-color: rgb(36, 5, 5);
+  background-color: rgba(255, 255, 255, 0.692);
 }
 
-nav p
-{
-  display: inline-block;
-    padding: 14px 16px;
-    margin: 0;
-}
-
-#nav-right
-{
-    float: right;
-}
 nav a
 {
-    display: inline-block;
+  display: inline-block;
+  text-decoration: none;
+  color:rgba(173, 40, 49, 1);
+  text-align: center;
+  padding: 20px 10px;
+}
+
+nav a:hover
+{
+  color: white;
+  background-color: rgba(173, 40, 49, 1);
+}
+
+#tandc
+{
+  color: black;
+  font-weight: 700;
+  padding: 20px;
+}
+
+
+/* nav {
+  background-color: rgb(36, 5, 5);
+}
+
+nav p {
+  display: inline-block;
+  padding: 14px 16px;
+  margin: 0;
+}
+
+#nav-right {
+  float: right;
+}
+nav a {
+  display: inline-block;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
-}
+} */
 
 /* Home section */
-#home
-{
-    padding: 200px;
-    color: white;
-    background-color:rgba(56, 4, 14, 1);
+#home {
+  padding: 200px 0px;
+  color: white;
+  background-color: rgba(56, 4, 14, 1);
 }
 
-#home p
-{
-    font-size: 25px;
+#home p {
+  font-size: 25px;
 }
 
 /* About section */
 
-
-
 /* Contact section + footer */
-#contact, footer
+#contact,
+footer {
+  color: white;
+  background-color: rgba(56, 4, 14, 1);
+}
+
+#contact a
 {
-color: white;
-background-color:rgba(56, 4, 14, 1);
+  color: white;
 }
 
 /* Form styling */
 form {
-    /* To see the outline of the form */
-    padding: 1em;
-    border: 1px solid #CCC;
-  }
-  
-  form div + div {
-    margin-top: 1.5em;
-  }
-  
-  label {
-    /* To make sure that all labels have the same size and are properly aligned */
-    display: inline-block;
-    width: 90px;
-    text-align: right;
-  }
-  
-  input, textarea {
-    /* To make sure that all text fields have the same font settings
+  /* To see the outline of the form */
+  padding: 1em;
+  border: 1px solid #ccc;
+}
+
+form div + div {
+  margin-top: 1.5em;
+}
+
+label {
+  /* To make sure that all labels have the same size and are properly aligned */
+  display: inline-block;
+  width: 90px;
+  text-align: right;
+}
+
+input,
+textarea {
+  /* To make sure that all text fields have the same font settings
        By default, textareas have a monospace font */
-    font: 1em sans-serif;
-  
-    /* To give the same size to all text fields */
-    width: 300px;
-    box-sizing: border-box;
-    border: 1px solid #999;
-  }
-  
-  input:focus, textarea:focus {
-    /* To give a little highlight on active elements */
-    border-color: #000;
-  }
-  
-  textarea {
-    /* To properly align multiline text fields with their labels */
-    vertical-align: top;
-  
-    /* To give enough room to type some text */
-    height: 5em;
-  }
-  
-  .button {
-    /* To position the buttons to the same position of the text fields */
-    padding-left: 90px; /* same size as the label elements */
-  }
-  
-  button {
-    /* This extra margin represent roughly the same space as the space
+  font: 1em sans-serif;
+
+  /* To give the same size to all text fields */
+  width: 300px;
+  box-sizing: border-box;
+  border: 1px solid #999;
+}
+
+input:focus,
+textarea:focus {
+  /* To give a little highlight on active elements */
+  border-color: #000;
+}
+
+textarea {
+  /* To properly align multiline text fields with their labels */
+  vertical-align: top;
+
+  /* To give enough room to type some text */
+  height: 5em;
+}
+
+.button {
+  /* To position the buttons to the same position of the text fields */
+  padding-left: 90px; /* same size as the label elements */
+}
+
+button {
+  /* This extra margin represent roughly the same space as the space
        between the labels and their text fields */
-    margin-left: .5em;
-    padding: 10px 20px;
+  margin-left: 0.5em;
+  padding: 10px 20px;
+}
+
+@media only screen and (max-width: 400px) {
+
+  .content-wrap
+  {
+    margin: 0px 50px;
+  }
+  /* Collapse navigation */
+  nav a 
+  {
+    display: block;
+    border-bottom: 1px solid rgba(173, 40, 49, 1);
   }
 
+  /* Reduce h1, h2, h3, p font sizes */
+  h1 {
+    font-size: 50px;
+  }
   
+  h2 {
+    text-align: center;
+    font-size: 35px;
+    margin-top: 0;
+  }
+  
+  h3 {
+    font-size: 25px;
+  }
+  
+  p {
+    font-size: 20px;
+  }
+
+  /* Form styling */
+form {
+  /* To see the outline of the form */
+  padding: 1em;
+  border: 1px solid #ccc;
+}
+
+form div + div {
+  margin-top: 1.5em;
+}
+
+label {
+  /* To make sure that all labels have the same size and are properly aligned */
+  display: block;
+  width: 80px;
+  text-align: left;
+}
+
+input,
+textarea {
+  /* To make sure that all text fields have the same font settings
+       By default, textareas have a monospace font */
+  font: 1em sans-serif;
+
+  /* To give the same size to all text fields */
+  width: 200px;
+  box-sizing: border-box;
+  border: 1px solid #999;
+}
+
+input:focus,
+textarea:focus {
+  /* To give a little highlight on active elements */
+  border-color: #000;
+}
+
+textarea {
+  /* To properly align multiline text fields with their labels */
+  vertical-align: top;
+
+  /* To give enough room to type some text */
+  height: 5em;
+}
+
+.button {
+  /* To position the buttons to the same position of the text fields */
+  padding-left: 90px; 
+}
+
+button {
+  /* This extra margin represent roughly the same space as the space
+       between the labels and their text fields */
+  margin-left: 0.5em;
+  padding: 10px 20px;
+}
+
+}
