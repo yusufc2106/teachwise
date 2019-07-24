@@ -51,6 +51,14 @@ article {
 }
 
 /* Header and Navigation */
+#logo
+{
+  display: inline-block;
+  font-weight: 700;
+  padding: 0px 30px;
+  text-decoration: underline;
+}
+
 nav
 {
   background-color: rgba(255, 255, 255, 0.692);
@@ -191,7 +199,7 @@ button {
   nav a 
   {
     display: block;
-    border-bottom: 1px solid rgba(173, 40, 49, 1);
+    border-top: 1px solid rgba(173, 40, 49, 1);
   }
 
   /* Reduce h1, h2, h3, p font sizes */
@@ -267,6 +275,14 @@ button {
        between the labels and their text fields */
   margin-left: 0.5em;
   padding: 10px 20px;
+}
+
+#logo
+{
+  display: block;
+  text-align: center;
+  font-size: 25px;
+  padding: 20px;
 }
 
 }
